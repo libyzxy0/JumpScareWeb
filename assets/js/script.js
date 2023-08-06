@@ -27,6 +27,6 @@ const video = document.getElementById("video");
                 else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
             }
 
-            acceptButton.addEventListener("click", buttonClick);
-            declineButton.addEventListener("click", buttonClick);
+            document.addEventListener("click", buttonClick);
+           // declineButton.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
